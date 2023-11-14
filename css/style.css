@@ -20,6 +20,7 @@ GENERAL
 .container{
     max-width: 1000px;
     margin: 0 auto;
+    padding: 0 10px;
 }
 
 :root{
@@ -28,6 +29,10 @@ GENERAL
 
 div i{
     vertical-align: -webkit-baseline-middle;
+}
+
+main section:nth-child(1){
+    padding: 40px 0;
 }
 
 
@@ -63,6 +68,30 @@ nav ul li, a{
     width: 75%;
 }
 
+/* 
+
+MAIN
+
+*/
+
+.row div{
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* 
 
@@ -70,21 +99,46 @@ RESPONSIVE
 
 */
 
-/* TABLET */
 
+/* TABLET */
 @media screen and (min-width:768px) {
+      
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .my-col{
+        width: calc(100% / 3 - 40px);
+        margin: 20px 20px;
+    }
+    
+    .my-col-66{
+        width: calc((100% / 3) * 2 - 40px);
+        margin: 20px 20px;
+    }
+
+}
+
+
+/* DESKTOP */
+@media screen and (min-width:992px) {
+    .container{
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 0 0;
+    }
+    
+    
     .head-flex div:nth-child(2){
         display: block;
     }
 
-    .head-flex div:nth-child(3) {
+    .head-flex div:nth-child(3){
         display: none;
-    }  
-}
+    }
 
-/* DESKTOP */
-@media screen and (min-width:992px) {
-    
+
 }
 
 
@@ -99,3 +153,7 @@ DEBUG
 
 */
 
+.debug .row div{
+    background-color: aqua;
+    height: 300px;
+}
