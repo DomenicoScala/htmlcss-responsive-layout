@@ -11,4 +11,91 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* 
+
+GENERAL
+
+*/
+
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+:root{
+    --main-color-blue: #0084FD;
+}
+
+div i{
+    vertical-align: -webkit-baseline-middle;
+}
+
+
+/* 
+
+HEADER
+
+*/
+
+.head-flex{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px;
+    color: white;
+}
+
+.head-flex div:nth-child(2){
+    display: none;
+}
+
+header{
+    background-color:var(--main-color-blue);
+}
+
+
+nav ul li, a{
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+}
+
+.head-flex div img{
+    width: 75%;
+}
+
+
+/* 
+
+RESPONSIVE
+
+*/
+
+/* TABLET */
+
+@media screen and (min-width:768px) {
+    .head-flex div:nth-child(2){
+        display: block;
+    }
+
+    .head-flex div:nth-child(3) {
+        display: none;
+    }  
+}
+
+/* DESKTOP */
+@media screen and (min-width:992px) {
+    
+}
+
+
+
+
+
+
+
+/* 
+
+DEBUG
+
+*/
 
