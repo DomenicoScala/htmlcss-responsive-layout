@@ -25,16 +25,20 @@ GENERAL
 
 :root{
     --main-color-blue: #0084FD;
+    --color-section-even: #9792E4
 }
 
 div i{
     vertical-align: -webkit-baseline-middle;
 }
 
-main section:nth-child(1){
+main section{
     padding: 40px 0;
 }
 
+/* main section:nth-child(2){
+    padding: 40px 0;
+} */
 
 /* 
 
@@ -58,7 +62,7 @@ header{
 }
 
 
-nav ul li, a{
+nav ul li, nav ul li a{
     text-decoration: none;
     display: inline-block;
     color: white;
@@ -79,15 +83,46 @@ MAIN
     margin-bottom: 20px;
 }
 
+main section:nth-child(even){
+    background-color: #9792E4;
+}
+
+.col50 img, .col50 div img{
+    width: 100%;
+    padding: 20px;
+}
+
+.col50{
+    padding: 20px 10px;
+    color: white;
+}
+
+.col50 > h3, .col50 > p{
+    color: white;
+    margin-top: 30px;
+    line-height: 30px;
+}
 
 
+.col50 div{
+    background-color: white;
+    border-radius: 20px;  
+}
 
 
+.box-white h3, .box-white p{
+    color: black;
+    text-align: center;
+    padding: 10px 10px;
+}
 
-
-
-
-
+.box-white a{
+    display: inline-block;
+    background-color: #9792E4;
+    border-radius: 50%;
+    text-align: center;
+    padding: 10px;
+}
 
 
 
@@ -118,6 +153,7 @@ RESPONSIVE
         margin: 20px 20px;
     }
 
+   
 }
 
 
@@ -138,6 +174,16 @@ RESPONSIVE
         display: none;
     }
 
+   
+    .col50{
+        width: calc(100% / 2);
+        position: relative;
+    }
+
+    .box-white{
+        position: absolute;
+        top: 125px;
+    }
 
 }
 
@@ -153,7 +199,7 @@ DEBUG
 
 */
 
-.debug .row div{
+.debug .row .my-col-66, .debug .row .my-col{
     background-color: aqua;
     height: 300px;
 }
