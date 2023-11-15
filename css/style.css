@@ -18,9 +18,9 @@ GENERAL
 */
 
 .container{
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 20px;
 }
 
 :root{
@@ -42,6 +42,31 @@ main section{
     border-radius: 20px;
     color: black;
 }
+
+.my-col-66{
+    background-color: #B5DDFF;
+}
+
+.my-col{
+    background-color: #B5DDFF;
+}
+
+.button-blue{
+    display: inline-block;
+    padding: 14px 50px;
+    color: white;
+    background-color: #0084FD;
+    border-radius: 20px;
+    text-decoration: none;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+.card-info-big img{
+    width: 100%;
+}
+
+
 
 
 /* 
@@ -77,13 +102,17 @@ nav ul li, nav ul li a{
     width: 75%;
 }
 
+.fa-brands, .fa-apple{
+    vertical-align: revert;
+}
+
 /* 
 
 MAIN
 
 */
 
-.row div{
+.row > div{
     border-radius: 20px;
     margin-bottom: 20px;
 }
@@ -151,6 +180,47 @@ main section:nth-child(even){
     text-align: center;
 }
 
+.card-info-big{
+    padding: 50px 50px 0 50px;
+}
+
+.card-info-big h2{
+    color: #0084FD;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.card-info-big p{
+    font-size: 20px;
+    line-height: 35px;
+    margin-bottom: 30px;
+}
+
+.card-info-2{
+    padding: 30px;
+    text-align: center;
+}
+
+
+.card-info-2 div i{
+    font-size: 70px;
+}
+
+
+.card-info-2 div i, .card-info-2 div h2 {
+    color: #0084FD;
+}
+
+.card-info-2 div h2{
+    margin: 20px 0;
+}
+
+
+.card-info-2 div p{
+    line-height: 35px;
+    font-size: 20px;
+}
+
 
 /* 
 
@@ -185,7 +255,7 @@ RESPONSIVE
 /* DESKTOP */
 @media screen and (min-width:992px) {
     .container{
-        max-width: 1000px;
+        max-width: 1200px;
         margin: 0 auto;
         padding: 0 0;
     }
@@ -199,14 +269,6 @@ RESPONSIVE
         display: none;
     }
 
-    
-
-
-
-
-
-
-
     .col50{
         width: calc(100% / 2);
         position: relative;
@@ -217,6 +279,26 @@ RESPONSIVE
         top: 125px;
     }
 
+    .card-info-big{
+        display: flex;
+    }
+
+    .card-info-big div:first-child{
+        width: 60%;
+    }
+
+    .card-info-big div:last-child{
+        width: 40%;
+    }
+
+    .cont-img-big{
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .button-blue{
+        margin-bottom: 40px;
+    }
 }
 
 
@@ -231,7 +313,7 @@ DEBUG
 
 */
 
-.debug .row .my-col-66, .debug .row .my-col{
+/* .debug .row .my-col-66, .debug .row .my-col{
     background-color: aqua;
     height: 300px;
-}
+} */
