@@ -123,6 +123,10 @@ main section{
     font-size: 30px;
 }
 
+footer{
+    background-color: #333333;
+}
+
 /* 
 
 HEADER
@@ -416,6 +420,27 @@ span{
     font-size: 4px;
     vertical-align: middle;
 }
+
+/* 
+
+FOOTER
+
+*/
+
+footer section div{
+    text-align: center;
+    color: white;
+    padding: 40px;
+}
+
+footer div p{
+    margin-bottom: 30px;
+}
+
+footer span{
+    color: #9792E4;
+}
+
 
 /* 
 
