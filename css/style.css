@@ -131,9 +131,15 @@ main section:nth-child(even){
     color: white;
 }
 
-.col50 > h3, .col50 > p{
+.col50 > h3{
     color: white;
     margin-top: 30px;
+    font-size: 30px;
+}
+
+.col50 > p{
+    color: white;
+    margin-top: 40px;
     line-height: 30px;
 }
 
@@ -150,12 +156,26 @@ main section:nth-child(even){
     padding: 10px 10px;
 }
 
+.box-white p{
+    line-height: 30px;
+}
+
+.fa-solid, .fa-arrow-down{
+    vertical-align: baseline;
+}
+
+.box-white{
+    text-align: center;
+    padding: 30px;    
+}
+
+
 .box-white a{
     display: inline-block;
     background-color: #9792E4;
     border-radius: 50%;
-    text-align: center;
-    padding: 10px;
+    padding: 17px;
+    color: black;
 }
 
 .col-100{
