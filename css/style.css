@@ -29,6 +29,13 @@ GENERAL
     padding: 0 20px;
 }
 
+.container2{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
 :root{
     --main-color-blue: #0084FD;
     --color-section-even: #9792E4;
@@ -48,6 +55,18 @@ main section{
     border-radius: 20px;
     color: black;
 }
+
+.button-white1{
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color:#9792E4;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
 
 .my-col-66{
     background-color: #B5DDFF;
@@ -355,6 +374,48 @@ section:nth-child(4) h3 {
     font-weight: bold;
 }
 
+.last-section{
+    text-align: center;
+}
+
+
+.last-section h5{
+    letter-spacing: 3px;
+    color: rgb(109, 109, 109, 1);
+    margin: 25px 0;
+}
+
+.last-section h4{
+    font-size: 30px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.last-section h3{
+    font-size: 50px;
+    color: gold;
+    margin-bottom: 30px;
+}
+
+.last-section p:nth-child(4){
+    line-height: 30px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.last-section p:nth-child(6){
+    color: white;
+    margin: 30px;
+}
+
+span{
+    text-decoration: underline;
+}
+
+.fa-circle{
+    font-size: 4px;
+    vertical-align: middle;
+}
 
 /* 
 
@@ -466,6 +527,13 @@ RESPONSIVE
         width: calc(100% / 3 - 20px);
         margin: 10px 10px;
     }
+
+    .container2{
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    
 }
 
 
