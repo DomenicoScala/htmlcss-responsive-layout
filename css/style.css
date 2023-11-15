@@ -25,7 +25,7 @@ GENERAL
 
 :root{
     --main-color-blue: #0084FD;
-    --color-section-even: #9792E4
+    --color-section-even: #9792E4;
 }
 
 div i{
@@ -64,6 +64,38 @@ main section{
 
 .card-info-big img{
     width: 100%;
+}
+
+.card-testimonials{
+    background-color: #9792E4;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10%;
+}
+
+.card-testimonials div img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.info-testimonials p{
+    line-height: 28px;
+    margin: 40px 0;
+    text-align: center;
+}
+
+.info-testimonials h3{
+    color: #9792E4;
+    text-align: center;
+    font-size: 30px;
+}
+
+.card-testimonials div p, .card-testimonials div h4{
+    color: white;
+    line-height: 30px;
+    margin: 20px;
 }
 
 
@@ -178,27 +210,7 @@ main section:nth-child(even){
     color: black;
 }
 
-.col-100{
-    background-color: #9792E4;
-    margin-top: 20px;
-}
 
-.circle-img img{
-    clip-path: circle(50%);
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    margin: 20px 0;
-}
-
-
-.col-100 .circle-img{
-    text-align: center;
-}
-
-.col-100 div:nth-child(2){
-    text-align: center;
-}
 
 .card-info-big{
     padding: 50px 50px 0 50px;
@@ -241,6 +253,10 @@ main section:nth-child(even){
     font-size: 20px;
 }
 
+.card-testimonials{
+    margin: 30px;
+}
+
 
 /* 
 
@@ -267,6 +283,12 @@ RESPONSIVE
         margin: 20px 20px;
     }
 
+    .card-testimonials{
+        display: flex;
+        text-align: justify;
+        padding: 20px;
+        border-radius: 50px;
+    }
    
    
 }
@@ -318,6 +340,10 @@ RESPONSIVE
 
     .button-blue{
         margin-bottom: 40px;
+    }
+
+    .desc-testimonials{
+        padding: 30px;
     }
 }
 
