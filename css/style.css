@@ -23,6 +23,12 @@ GENERAL
     padding: 0 20px;
 }
 
+.container1{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 :root{
     --main-color-blue: #0084FD;
     --color-section-even: #9792E4;
@@ -67,9 +73,36 @@ main section{
 }
 
 
+.button-purple{
+    background-color: #9792E4;
+    display: inline-block;
+    padding: 10px 35px;
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    letter-spacing: 4px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
 
+.button-purple1{
+    background-color: #9792E4;
+    display: inline-block;
+    padding: 10px 35px;
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
 
+.fa-brands, .fa-apple{
+    vertical-align: revert;
+}
 
+.aboutus-img-director div > i{
+    color: #9792E4;
+    font-size: 30px;
+}
 
 /* 
 
@@ -104,21 +137,6 @@ nav ul li, nav ul li a{
     width: 75%;
 }
 
-.fa-brands, .fa-apple{
-    vertical-align: revert;
-}
-
-.button-purple{
-    background-color: #9792E4;
-    display: inline-block;
-    padding: 10px 35px;
-    color: white;
-    border-radius: 20px;
-    text-decoration: none;
-    letter-spacing: 4px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
 
 
 /* 
@@ -306,6 +324,38 @@ section:nth-child(4) h3 {
 }
 
 
+.aboutus-img-director div img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 30px;
+}
+
+
+.aboutus-info h4{
+    font-size: 40px;
+    color: #9792E4;
+    margin: 30px 0;
+}
+
+.aboutus-info p{
+    line-height: 30px;
+}
+
+.aboutus-info p:nth-child(2){
+    margin-bottom: 30px;
+}
+
+
+.aboutus-img-director div p{
+    color:#9792E4;
+    font-size: 24px;
+    margin: 15px 0;
+    font-weight: bold;
+}
+
+
 /* 
 
 RESPONSIVE
@@ -343,7 +393,20 @@ RESPONSIVE
         margin: 10px 10px;
     }
 
-   
+    .aboutus{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .aboutus-info{
+        width: 60%;
+        padding: 0 30px;
+    }
+
+    .aboutus-img-director{
+        width: 40%;
+        padding: 20px;
+    }
 }
 
 
